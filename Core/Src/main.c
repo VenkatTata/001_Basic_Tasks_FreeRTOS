@@ -21,7 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "FreeRTOS.h"
+#include "task.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -41,14 +43,15 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+#define DWT_CTRL 		(*(volatile uint32_t*)0xE0001000)
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
-
+void task1_handler(void* parameters);
+void task2_handler(void* parameters);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -63,7 +66,9 @@ static void MX_GPIO_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	BaseType_t status;
+	TaskHandle_t *task1_handle = NULL;
+	TaskHandle_t *task2_handle = NULL;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -85,7 +90,18 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+  DWT_CTRL |= (1<<0);
 
+  SEGGER_SYSVIEW_Conf();
+
+  SEGGER_SYSVIEW_Start();
+  status = xTaskCreate(task1_handler, "Task1", 200, "Hello world from Task1", 2, task1_handle);
+  configASSERT(status == pdPASS);
+
+  status = xTaskCreate(task2_handler, "Task2", 200, "Hello world from Task2", 2, task2_handle);
+  configASSERT(status == pdPASS);
+
+  vTaskStartScheduler();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -186,7 +202,21 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void task1_handler(void* parameters)
+{
+	while(1)
+	{
+		printf("\n%s",(char*)parameters);
+//		taskYIELD();
+	}
+}
+void task2_handler(void* parameters)
+{
+	while(1)
+	{
+		printf("\n%s",(char*)parameters);
+	}
+}
 /* USER CODE END 4 */
 
 /**

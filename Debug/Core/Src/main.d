@@ -25,7 +25,23 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/FreeRTOS.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/FreeRTOSConfig.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/OS/SEGGER_SYSVIEW_FREERTOS.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/SEGGER/SEGGER.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/Config/Global.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW_ConfDefaults.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/Config/SEGGER_SYSVIEW_Conf.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/Config/SEGGER_RTT_Conf.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/projdefs.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/portable.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/deprecated_definitions.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/portmacro.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/mpu_wrappers.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/task.h \
+ C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/list.h
 
 ../Core/Inc/main.h:
 
@@ -82,3 +98,35 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/FreeRTOS.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/FreeRTOSConfig.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/OS/SEGGER_SYSVIEW_FREERTOS.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/SEGGER/SEGGER.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/Config/Global.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW_ConfDefaults.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/Config/SEGGER_SYSVIEW_Conf.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/SEGGER/Config/SEGGER_RTT_Conf.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/projdefs.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/portable.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/deprecated_definitions.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/portmacro.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/mpu_wrappers.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/task.h:
+
+C:/Users/saikr/OneDrive/Desktop/freeRTOS\ udemy/Workspace/RTOS_workspace/FreeRTOS_projects/001_Tasks/ThirdParty/FreeRTOS/include/list.h:
